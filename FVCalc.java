@@ -6,7 +6,7 @@ public class FVCalc {
         int years = Integer.parseInt(args[2]);
         double futureVal = currentVal * Math.pow(1+(rate/100),years);
         double Mispar = Math.pow(2,4);
-        System.out.println("After "+years+" years, a $" +currentVal+" saved at "+rate+"% will yield $"+futureVal);
+        System.out.println("After "+years+" years, a $" +currentVal+" saved at "+rate+"% will yield $"+(int)futureVal);
         System.out.println((int)Mispar);
 	}
 }
